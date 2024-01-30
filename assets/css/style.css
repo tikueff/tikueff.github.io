@@ -1,0 +1,328 @@
+/*STANDARDER*/
+/* ICONER: https://iconify.design/ */
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+* {
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #fcfcfc;
+}
+
+hr {
+    border: 2px solid rgb(108, 108, 108);
+    border-radius: 5px;
+}
+
+iframe {
+    border-radius: 15px;
+}
+img {
+    border-radius: 15px;
+}
+
+/*Scrollbar*/
+::-webkit-scrollbar {
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    background: #F54D2A; 
+    border-radius: 20px;
+}
+
+/* Universiell footer */
+.footer {
+    color: white;
+    margin-top: 2rem;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #F54D2A;
+    text-align: center;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.footer .social {
+    fill: white;
+}
+
+/* Navigatoionsmenyn */
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+nav ul li a {
+    display: block;
+    color: black;
+}
+nav ul li ul.dropdown {
+    width: 100%;
+    background-color: #d5d7d4;
+    z-index: 1;
+    display: none;
+    position:absolute;
+    left: 0;
+    font-weight: 700;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    transition: .4s ease;
+}
+nav ul li ul.dropdown a:hover {
+    text-decoration: underline;
+    transition: .4s ease;
+}
+nav ul li ul.dropdown li {
+    display: block;
+    align-content: left;
+    transition: .4s ease;
+}
+nav ul li:hover ul.dropdown {
+    display: block;
+    align-items: center;
+    transition: .4s ease;
+}
+
+.nav-wrapper {
+    margin-top: 2rem;
+}
+.nav-wrapper nav {
+    width: clamp(300px, 80%, 1300px);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-wrapper nav .logo {
+    display: flex;
+    height: 10rem;
+}
+.nav-wrapper nav .menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.nav-wrapper nav .menu .link {
+    color: black;
+    font-weight: 700;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+}
+.nav-wrapper nav .menu .long-link {
+    color: black;
+    font-weight: 700;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.nav-wrapper nav .menu .link:hover {
+    background: #d5d7d4;
+    color: black;
+    fill: black;
+    transition: .4s ease;
+}
+.nav-wrapper nav .menu .long-link:hover {
+    background: #d5d7d4;
+    color: black;
+    fill: black;
+    transition: .4s ease;
+}
+.nav-wrapper nav .menu .link-selected {
+    color: white;
+    background: #F54D2A;
+    font-weight: 700;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+    transition: .4s ease;
+}
+.nav-wrapper nav .menu .long-link-selected {
+    background-color:#F54D2A;
+    color: white;
+    font-weight: 700;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+}
+.nav-wrapper nav .menu .long-link-selected a {
+    color: white;
+}
+.nav-wrapper nav .menu .long-link-selected:hover {
+    background-color:#d5d7d4;
+    color: black;
+    font-weight: 700;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    transition: .4s ease;
+}
+.nav-wrapper nav .menu .long-link-selected:hover a {
+    color: black;
+}
+/*Mobil meny*/
+.mobile-wrapper img {
+    padding-top: 1rem;
+    width: 8rem;
+    z-index: 2;
+}
+.mobile-wrapper {
+    margin: 2rem;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+    z-index: 2;
+}
+  
+.hamburger-icon div {
+    width: 35px;
+    height: 5px;
+    background-color: #F54D2A;
+    border-radius: 15px;
+    margin: 6px;
+    transition: 0.4s;
+    z-index: 2;
+}
+
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+  
+.open .bar2 {
+    opacity: 0;
+}
+  
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.mobile-menu a {
+    color: black;
+    font-weight: 700;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+}
+
+.mobile-menu .clicked {
+    color: white;
+    background: #F54D2A;
+    font-weight: 700;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: black;
+}
+  
+.mobile-menu ul a {
+    color: black;
+}
+  
+.mobile-menu ul li {
+    padding: 5px;
+    margin-left: 10px;
+    color: black;
+}
+  
+.mobile-menu ul li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.link-clicked {
+    color: white;
+    background: #F54D2A;
+    font-weight: 700;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+}
+.link-clicked a {
+    color: white;
+}
+
+.mobile-menu {
+    display: none;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+    transition: 4s ease;
+    color: black;
+}
+  
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    height: 100vh;
+    transition: 4s ease;
+}
+  
+.mobile-menu li {
+    margin-bottom: 1rem;
+    font-size: 20px;
+    list-style: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-wrapper nav {
+      display: none;
+    }
+  
+    .hamburger-icon {
+      display: block;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .mobile-wrapper img {
+        display: none;
+    }
+}

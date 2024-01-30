@@ -1,0 +1,92 @@
+/* STARTSIDA */
+.container { /*definerar bredd, gap, marginaler och flex-egenskaper*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: clamp(300px 80% 1300px);
+    gap: 50px;
+    margin: 2rem;
+}
+/*Inforuta*/
+.container .info {
+    background-color: #F54D2A;
+    color: white;
+    padding: 1rem;
+    border-radius: 15px;
+    width: 700px;
+}
+/*Styrelse-ruta*/
+.container .styrelse {
+    background-color: #D5D7D4;
+    padding: 1rem;
+    border-radius: 15px;
+    width: 400px;
+}
+.container .styrelse a {
+    text-decoration: underline;
+    font-weight: thin;
+    color: black;
+}
+
+/*Evenemangskalender*/
+.event-wrapper {
+    display: flex; /*definerar att detta är en flex container*/
+    justify-content: center; /*placerar innehållet i av containern i mitten*/
+    width: clamp(300px 80% 1300px);
+    margin: 2rem;
+}
+.event-wrapper .calendar {
+    background-color: #dfbd8bca;
+    border-radius: 15px;
+    padding: 1rem;
+    width: 1150px;
+    gap: 2rem;
+}
+.event-wrapper .calendar .events {
+    display: flex; /*definerar att detta är en flex container*/
+    flex-direction: row; /*div:arna inuti containern lägger sig på rad*/
+    overflow-x: scroll;
+}
+.event-wrapper .calendar .events .box {
+    padding: 1rem;
+    min-width: 240px;
+}
+
+/*"Läs mer"-knappar*/
+.event-wrapper .calendar .events .box a {
+    background:white;
+    color: black;
+    padding: 1rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 1rem;
+    border-radius: 5px;
+    transition: .4s ease; /*övergången ease kommer att ta .4s*/
+}
+.event-wrapper .calendar .events .box a:hover {
+    background-color: #F54D2A;
+    color: #D5D7D4;
+}
+/*"Mer info snart"-knappar*/
+.event-wrapper .calendar .events .box .block {
+    background-color: #D5D7D4;
+    width: fit-content;
+    border-radius: 5px;
+    padding: 1rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: not-allowed;
+}
+
+@media only screen and (max-width: 600px) {
+    .container .styrelse { /*Ökar bredden på rutan till max när sidan visas på mobil*/
+        width: 100%;
+    }
+    .event-wrapper .calendar .events {
+        flex-wrap: wrap;
+    }
+    .event-wrapper .calendar .events .box {
+        min-width: none;
+    }
+}

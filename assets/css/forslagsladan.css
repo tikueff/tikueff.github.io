@@ -1,0 +1,51 @@
+/* FÖRSLAGSLÅDAN */
+.container { /*Flex container, bestämmer margin och gaps*/
+    width: clamp(300px 80% 1300px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem;
+}
+/*Iframe ram (Ej mobil)*/
+.container .ram { /*Låd-ram - bakgrundsfärg, textfärg, padding, rundade hörn & bredd*/
+    background-color: #F54D2A;
+    color: white;
+    padding: 1rem;
+    border-radius: 15px;
+    width: 1150px;
+}
+iframe { /*Länk-rutan - minimun-höjd & bredd*/
+    width: 100%;
+    min-height: 650px;
+}
+/*Inforuta (Endast mobil)*/
+.container .suggestion {
+    display: none;
+    background-color: #F54D2A;
+    color: white;
+    padding: 1rem;
+    border-radius: 15px;
+    width: 1150px;
+}
+/*Länk-knapp*/
+.container .suggestion a {
+    background:white;
+    color: black;
+    padding: 1rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 1rem;
+    border-radius: 5px;
+    transition: .4s ease; /*övergången ease kommer att ta .4s*/
+}
+
+@media only screen and (max-width: 600px) {
+    .container .suggestion {
+        display: inline;
+    }
+    .container .ram {
+        display: none;
+    }
+}

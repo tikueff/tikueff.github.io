@@ -1,0 +1,65 @@
+/*NYHETSSIDA*/
+
+.stack {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: clamp(300px 80% 1300px);
+    gap: 50px;
+    margin: 2rem;
+}
+.stack .nyhet {
+    background-color: #F54D2A;
+    color: white;
+    padding: 1rem;
+    padding-left: 2rem;
+    border-radius: 15px;
+    width: 600px;
+    height: 300px
+}
+.stack .nyhet:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.stack .nyhet .content {
+    display: flex;
+    gap: 1rem;
+    position: relative;
+}
+.stack .nyhet .content img {
+    height: 200px;
+    border-radius: 15px;
+}
+.stack .nyhet .content .datum {
+    position: absolute;
+    right: 10px;
+    bottom: -10px;
+    opacity: 80%;
+}
+.stack .blank_nyhet {
+    width: 600px;
+    height: 300px;
+}
+
+@media only screen and (max-width: 600px) {
+    .stack .nyhet {
+        height: 550px;
+        align-items: center;
+        padding-left: none;
+        padding: 2rem;
+    }
+    .stack .nyhet .content {
+        display: contents;
+    }
+    .stack .nyhet .content img {
+        justify-content: center;
+    }
+    .stack .nyhet .content .datum {
+        bottom: -95px;
+        right: 50px;
+    }
+    .stack .blank_nyhet {
+        display: none;
+    }
+}

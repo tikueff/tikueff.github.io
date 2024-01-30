@@ -1,0 +1,70 @@
+/* OM OSS */
+.about-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.about-wrapper .about {
+    background-color: #F54D2A;
+    border-radius: 15px;
+    padding: 1rem;
+    margin: 2rem;
+    color:white;
+    width: 1150px;
+    gap: 2rem;
+}
+
+/* STYRELSEGALLERIET */
+.styrelsen {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.styrelsen-content {
+    width: clamp(300px, 80%, 1350px);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+/*Text & Bild egenskaper*/
+.styrelsen-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.lada {
+    padding: 15px;
+    background-color: #D5D7D4;
+    border-radius: 15px;
+    width: 200px;
+    height: 350px;
+}
+.lada:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.lada h3 {
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+.lada h5 {
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    .lada {
+        height: 40%;
+        width: 40%;
+    }
+}
