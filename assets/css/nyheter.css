@@ -18,10 +18,6 @@
     width: 600px;
     height: 300px
 }
-.stack .nyhet:hover {
-    transform: scale(1.05);
-    transition: 0.3s;
-}
 .stack .nyhet .content {
     display: flex;
     gap: 1rem;
