@@ -12,6 +12,10 @@
     width: 1150px;
     gap: 2rem;
 }
+.about-wrapper .about a {
+    text-decoration: underline;
+    color: white;
+}
 
 /* STYRELSEGALLERIET */
 .styrelsen {

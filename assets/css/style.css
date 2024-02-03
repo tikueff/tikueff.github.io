@@ -185,7 +185,6 @@ nav ul li:hover ul.dropdown {
 .mobile-wrapper img {
     padding-top: 1rem;
     width: 8rem;
-    z-index: 2;
 }
 .mobile-wrapper {
     margin: 2rem;

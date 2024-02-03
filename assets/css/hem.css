@@ -8,6 +8,45 @@
     gap: 50px;
     margin: 2rem;
 }
+/*Stats*/
+.top-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.top-wrapper .stats {
+    width: 400px;
+    height: 85px;
+    background-color: #D5D7D4;
+    padding: 1rem;
+    border-radius: 15px;
+    font-size: 90%;
+}
+.top-wrapper .stats .antal {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.top-wrapper .button1 {
+    width: 325px;
+    height: 85px;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 15px;
+    background-color: #F54D2A;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+.top-wrapper .button2 {
+    width: 325px;
+    height: 85px;
+    border-color: #F54D2A;
+    border-radius: 15px;
+    border-width: 2px;
+    border-style: outset;
+}
 /*Inforuta*/
 .container .info {
     background-color: #F54D2A;
