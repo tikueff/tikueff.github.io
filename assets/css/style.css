@@ -14,11 +14,9 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #fcfcfc;
-}
-
-hr {
-    border: 2px solid rgb(108, 108, 108);
-    border-radius: 5px;
+    position: relative;
+    padding-bottom: 117px;
+    min-height: 100vh;
 }
 
 iframe {
@@ -38,7 +36,7 @@ img {
 }
 
 /* Universiell footer */
-.footer {
+footer {
     color: white;
     margin-top: 2rem;
     width: 100%;
@@ -47,8 +45,10 @@ img {
     text-align: center;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
+    position: absolute;
+    bottom: 0;
 }
-.footer .social {
+footer .social {
     fill: white;
 }
 

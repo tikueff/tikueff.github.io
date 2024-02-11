@@ -28,21 +28,26 @@
     gap: 2rem;
 }
 .top-wrapper .button1 {
-    width: 325px;
+   width: 325px;
     height: 85px;
     font-size: 30px;
     text-align: center;
     padding-top: 15px;
     background-color: #F54D2A;
+    opacity: 80%;
     border-radius: 15px;
     text-decoration: none;
     color: white;
     font-weight: 700;
 }
+.top-wrapper .button1:hover {
+    opacity: 100%;
+    transition: .4s ease;
+}
 .top-wrapper .button2 {
     width: 325px;
     height: 85px;
-    border-color: #F54D2A;
+    border-color: #dfbd8bca;
     border-radius: 15px;
     border-width: 2px;
     border-style: outset;

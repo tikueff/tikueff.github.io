@@ -1,0 +1,31 @@
+body {
+    width: auto;
+}
+.container { /*Flex container, bestämmer margin och gaps*/
+    width: clamp(300px 80% 1300px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; 
+    margin: 2rem;
+
+    height: 100%;
+}
+.container .info { /*Informationsruta - bakgrundsfärg, textfärg, padding, rundade hörn & bredd*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F54D2A;
+    color: white;
+    padding: 1rem;
+    border-radius: 15px;
+    width: 1150px;
+    height: 250px;
+}
+.container .info a {
+    text-decoration: underline;
+    color: white;
+}
