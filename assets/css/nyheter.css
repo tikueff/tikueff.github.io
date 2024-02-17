@@ -40,20 +40,11 @@
 
 @media only screen and (max-width: 600px) {
     .stack .nyhet {
-        height: 550px;
-        align-items: center;
-        padding-left: none;
-        padding: 2rem;
-    }
-    .stack .nyhet .content {
-        display: contents;
-    }
-    .stack .nyhet .content img {
-        justify-content: center;
+        height: 315px;
     }
     .stack .nyhet .content .datum {
-        bottom: -95px;
-        right: 50px;
+        bottom: -30px;
+        right: 0px;
     }
     .stack .blank_nyhet {
         display: none;
