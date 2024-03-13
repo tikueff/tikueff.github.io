@@ -1,0 +1,35 @@
+.container { /*definerar bredd, gap, marginaler och flex-egenskaper*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: clamp(300px 80% 1300px);
+    gap: 50px;
+    margin: 2rem;
+}
+.container .info {
+    background-color: #F54D2A;
+    color: white;
+    padding: 1rem;
+    border-radius: 15px;
+    width: 700px;
+}
+.container .info p i {
+    color: rgb(229, 229, 229);
+}
+.container .data {
+    background-color: #D5D7D4;
+    padding: 1rem;
+    border-radius: 15px;
+    width: 400px;
+}
+.container .data a {
+    color: black;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    .container .data {
+        width: 100%;
+    }
+}
