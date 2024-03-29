@@ -27,9 +27,17 @@
     color: black;
     text-decoration: underline;
 }
+.parent {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+}
 
 @media only screen and (max-width: 600px) {
     .container .data {
+        width: 100%;
+    }
+    .parent {
         width: 100%;
     }
 }
