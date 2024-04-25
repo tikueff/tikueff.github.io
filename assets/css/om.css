@@ -29,7 +29,7 @@
     padding: 2rem;
 }
 .styrelsen-content {
-    width: clamp(300px, 80%, 1350px);
+    /* width: clamp(300px, 80%, 1350px); */
     margin: 0 auto;
     display: flex;
     align-items: center;
