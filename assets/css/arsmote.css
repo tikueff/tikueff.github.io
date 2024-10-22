@@ -13,6 +13,7 @@
     padding: 1rem;
     border-radius: 15px;
     width: 700px;
+    min-height: 350px;
 }
 .container .info p i {
     color: rgb(229, 229, 229);
@@ -21,7 +22,7 @@
     background-color: #D5D7D4;
     padding: 1rem;
     border-radius: 15px;
-    width: 400px;
+    max-width: 400px;
 }
 .container .data a {
     color: black;
@@ -29,8 +30,11 @@
 }
 .parent {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 20px;
+}
+.parent img {
+    max-width: 370px;
 }
 
 @media only screen and (max-width: 600px) {
