@@ -13,16 +13,22 @@
     padding: 1rem;
     border-radius: 15px;
     width: 700px;
-    min-height: 350px;
+    min-height: 175px;
 }
-.container .info p i {
-    color: rgb(229, 229, 229);
+.container .info a {
+    background:white;
+    color: black;
+    padding: 1rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 1rem;
+    border-radius: 5px;
 }
 .container .data {
     background-color: #D5D7D4;
     padding: 1rem;
     border-radius: 15px;
-    max-width: 400px;
+    max-width: 370px;
 }
 .container .data a {
     color: black;
