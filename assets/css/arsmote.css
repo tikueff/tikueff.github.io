@@ -1,7 +1,7 @@
 html {
     scroll-behavior: smooth;
   }
-  
+
 .container { /*definerar bredd, gap, marginaler och flex-egenskaper*/
     display: flex;
     flex-direction: row;
@@ -41,7 +41,7 @@ html {
     background-color: #D5D7D4;
     padding: 1rem;
     border-radius: 15px;
-    max-width: 370px;
+    max-width: 375px;
 }
 .container .data a {
     color: black;
