@@ -12,7 +12,7 @@
     color: white;
     padding: 1rem;
     border-radius: 15px;
-    width: 700px;
+    max-width: 700px;
     min-height: 175px;
 }
 .container .info a {
@@ -23,6 +23,10 @@
     padding-bottom: 5px;
     margin-top: 1rem;
     border-radius: 5px;
+    transition: .4s ease;
+}
+.container .info a:hover {
+    text-decoration: underline;
 }
 .container .data {
     background-color: #D5D7D4;
@@ -33,6 +37,13 @@
 .container .data a {
     color: black;
     text-decoration: underline;
+}
+.container .time {
+    background-color: #dfbd8bca;
+    padding: 1rem;
+    border-radius: 15px;
+    max-width: 700px;
+    min-height: 175px;
 }
 .parent {
     display: flex;
