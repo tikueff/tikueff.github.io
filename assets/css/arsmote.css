@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
 .container { /*definerar bredd, gap, marginaler och flex-egenskaper*/
     display: flex;
     flex-direction: row;
@@ -15,7 +19,7 @@
     max-width: 700px;
     min-height: 175px;
 }
-.container .info a {
+.container .info .link {
     background:white;
     color: black;
     padding: 1rem;
@@ -25,8 +29,13 @@
     border-radius: 5px;
     transition: .4s ease;
 }
-.container .info a:hover {
+.container .info .link:hover {
     text-decoration: underline;
+}
+.container .info .shortcut {
+    text-decoration: underline;
+    font-style: italic;
+    color: white;
 }
 .container .data {
     background-color: #D5D7D4;
