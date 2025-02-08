@@ -28,7 +28,8 @@
     gap: 2rem;
 }
 .top-wrapper .button1 {
-    width: 325px;
+    width: 700px;
+    /* width: 325px; */
     height: 85px;
     font-size: 30px;
     text-align: center;
