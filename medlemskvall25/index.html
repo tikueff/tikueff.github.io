@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Medlemskväll - TIKUEFF</title>
+        <link rel="icon" type="image/x-icon" href="../../assets/images/icon.png">
+        <link rel="stylesheet" href="../../assets/css/style.css">
+        <link rel="stylesheet" href="../../assets/css/arsmote.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="nav-wrapper">
+                <nav> <!--Desktop Navigationsmeny-->
+                    <a href="../../"><img src="../../assets/images/icon.png" alt="TIKUEFF Logo" class="logo"></a>
+                    <ul class="menu">
+                        <li><a href="../../" class="link">Hem</a></li>
+                        <li><a href="../../nyheter/" class="link-selected">Nyheter</a></li>
+                        <li class="long-link">
+                            <a href="#">Medlemskap</a>
+                            <ul class="dropdown">
+                                <li><a href="../../medlemskap/">Information</a></li>
+                                <li><a href="https://ebas.rum.se/blimedlem/tikueff" target="_blank">Bli medlem</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://drive.google.com/drive/folders/1pgP46aje1kgQg8e5Xvf8RtLjEOskCLEF" class="link" target="_blank">Protokoll</a></li>
+                        <li><a href="../../forslagsladan/" class="link">Förslagslådan</a></li>
+                        <li><a href="../../om-oss/" class="link">Om oss</a></li>
+                    </ul>
+                    <div class="menu"> <!-- Sociala Medier - länkar -->
+                        <a href="https://www.instagram.com/tikueff/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="black" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z"/></svg></a>
+                        <a href="https://www.facebook.com/people/Timr%C3%A5-Kulturskolas-Elev-F%C3%B6r%C3%A4ldraf%C3%B6rening/100086434621321/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 24 24"><path fill="black" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg></a>
+                        <a href="mailto:tiku.eff@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="black" d="M10.89 2.538a2 2 0 0 1 2.072-.09l.147.09l8 5.333a2 2 0 0 1 .884 1.498l.007.166V19a2 2 0 0 1-1.85 1.995L20 21H4a2 2 0 0 1-1.995-1.85L2 19V9.535a2 2 0 0 1 .756-1.566l.135-.098l8-5.333ZM12 4.202L4.803 9L12 13.798L19.197 9L12 4.202Z"/></g></svg></a>
+                    </div> 
+                </nav>
+                <div class="mobile-wrapper"> <!-- Mobil Navigationsmeny -->
+                    <a href="../../"><img src="../../assets/images/icon.png" alt="TIKUEFF Logo"></a>
+                    <div class="hamburger-icon" onclick="toggleMobileMenu(this)">
+                        <div class="bar1"></div> <!-- Navigations icon -->
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                        <ul class="mobile-menu"> <!-- Navigationslänkar -->
+                            <li><a href="../../">Hem</a></li>
+                            <!--<li><a href="../../nyheter.html">Nyheter</a></li>-->
+                            <li><a href="../../medlemskap/">Medlemskap</a></li>
+                            <li><a href="../..https://drive.google.com/drive/folders/1pgP46aje1kgQg8e5Xvf8RtLjEOskCLEF?usp=sharing" class="link" target="_blank">Protokoll</a></li>
+                            <li><a href="../../forslagsladan/">Förslagslådan</a></li>
+                            <li><a href="../../om-oss/">Om oss</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="parent">
+                <div class="info">
+                    <h2>Välkommen till höstens Medlemskväll!</h2>
+                    <p>Om mindre än en månad är det äntligen dags igen! <br>Välkommen till en kväll fullspäckad med uppträdanden, aktiviteter, tävlingar och häng med vänner! <br><br>Precis som i höstas återkommer succén med öppen scen och uppträdanden! I fiket kommer det självklart även att säljas godis, läsk och snacks. <br><br>
+                        <h4>Vart kommer ni hålla till?</h4>
+                        Även denna termin håller vi till hos Aktivitetshuset Pangea på Tallgränd 1.
+                        <h4>När är det dags?</h4>
+                        Fredagen den 4 April!
+                        Åk.1-4: 18:00-20:00
+                        Åk.5-Höstadiet+ 20:30-22:30
+                        <h4>Kostar det något i inträde?</h4>
+                        Nej, men för att komma in på medlemskvällen måste du vara medlem hos oss i Elev- & Föräldraföreningen. Alla medlemmar får också möjlighet att ta med sig 𝗘𝗡 kompis mot ett inträde på 20kr!
+                        <br><br>Under de kommande veckorna kommer alla elever i Timrå Kulturskola få ett officiellt inbjudningskort till medlemskvällen, där hittar ni mer information om vad kvällen kommer att bjuda på samt hur man blir medlem i föreningen.
+                        Tänk på att lösa ditt medlemskap innan den 4 April för att spara tid i kön.</p>
+                </div>
+                <!-- <div class="time">
+                    <h2>Hålltider: Yngre Gruppen</h2>
+                    <div class="grupp">
+                        <h3>18:00</h3><p>Insläpp och häng<br>Kiosken öppnar</p>
+                        <h3>18:30</h3><p>Danshögstadiet uppträder i danssalen<br>Disco och lekar i danssalen</p>
+                        <h3>19:00</h3><p>Karaoke på stora scenen</p>
+                        <h3>19:30</h3><p>Lotteridragning <br>Fullt Ös på stora scenen <br>The Kingz på stora scenen</p>
+                        <h3>20:00</h3><p>STÄNGNING - Slut för i år</p>
+                    </div>
+                </div>
+                <br>
+                <div class="time">
+                    <h2>Hålltider: Äldre Gruppen</h2>
+                    <div class="grupp">
+                        <h3>20:30</h3><p>Insläpp och häng<br>Kiosken öppnar</p>
+                        <h3>21:00</h3><p>Danshögstadiet uppträder i danssalen</p>
+                        <h3>21:30</h3><p>Fullt Ös på stora scenen <br>The Kingz på stora scenen<br>Öppen scen <i>OBS. Anmälan krävs</i></p>
+                        <h3>22:00</h3><p>Lotteridragning</p>
+                        <h3>22:30</h3><p>STÄNGNING - Slut för i år</p>
+                    </div>
+                </div>
+                <div class="info" id="oppen-scen">
+                    <h2>Öppen Scen: Åk. 5 - Gymnasiet</h2>
+                    <p>Har du en låt du vill spela eller sjunga? Kanske gör du ett solonummer? Kanske är ni ett band, en dansgrupp eller en grupp sångare? Alla anmälningar är välkomna!</p><br>
+                    <p>Det kommer att finnas 10 platser att tillgängliga för anmälan, och om tid finns över så kommer även fler att få delta på plats.</p><br>
+                    <a href="https://forms.gle/PfqnWAPhyZRpj3m97" target="_blank" class="link">Anmäl dig här!</a>
+                </div> -->
+            </div>
+            <div class="parent">
+                <img src="../assets/images/medlemskvall25.pdf" alt="Affisch">
+                <div class="data">
+                    <h2>Medlemskväll 2025</h2>
+                    <p>
+                        <b>Datum:</b> Fredag 4 April 2025 <br>
+                        <b>Tid:</b> 18:00 - 20:00 & 20:30 - 22:30 <br>
+                        <b>Plats:</b> Aktivitetshuset Pangea, Tallgränd 1
+                    </p>
+                </div>
+                <br>
+                <!-- <img src="../assets/images/medlemskvall25.pdf" alt="Affisch">
+                <div class="data">
+                    <h2>Äldre Gruppen | Åk.5 - Gymnasiet</h2>
+                        <b>Datum:</b> Fredag 4 April 2025 <br>
+                        <b>Tid:</b> 20:30 - 22:30<br>
+                        <b>Plats:</b> Aktivitetshuset Pangea, Tallgränd 1
+                </div> -->
+                <!-- <div class="data">
+                    <h2>Biljettinformation</h2>
+                    <p>Precis som tidigare kommer alla elever att få två biljetter var, dessa delas ut av kulturskolans lärare under lektionerna v.45-46.</p><br>
+                    <p>Inträdesavgiften till vår medlemskväll kommer att vara 20kr och betalas vid insläpp via swish eller kontant. Är du däremot medlem hos oss så är inträde helt gratis.</p><br>
+                    <p>Skulle det vara så att du har tappat bort dina biljetter när det väl är dags så är det ingen fara! Vid insläppet kommer det att stå personal från kulturskolan som kan intyga att du är elev.</p>
+                </div> -->
+            </div>
+        </div>
+
+
+        <div class="phone-container">
+            <div class="parent">
+                <div class="info">
+                    <h2>Välkommen till höstens Medlemskväll!</h2>
+                    <p>Nu är det äntligen dags igen! <br>Välkommen till en kväll fullspäckad med uppträdanden, aktiviteter, tävlingar och häng med vänner! Även denna gång har vi delat upp kvällen i en yngre och en äldre grupp. För att så många som möjligt ska kunna vara med!<br>Vårens succé med <a href="#oppen-scen2" class="shortcut">öppen scen</a> och uppträdanden på scenen återkommer självklart! I danssalen kommer vi att ha ett stort dansgolv och i fiket kommer det säljas godis, läsk och snacks.</p>
+                    <p><br><b>Entré:</b> 20kr vid dörren<br><i>Gratis inträde för medlemmar</i></p>
+                </div>
+                <img src="../assets/images/Yngre.png" alt="Affisch Yngre Gruppen">
+                <div class="data">
+                    <h2>Yngre Gruppen | Åk. 1 - 4</h2>
+                    <p>
+                        <b>Datum:</b> Fredag 15 November 2024 <br>
+                        <b>Tid:</b> 18:00 - 20:00 <br>
+                        <b>Plats:</b> Aktivitetshuset Pangea, Tallgränd 1
+                    </p>
+                </div>
+                <div class="time">
+                    <h2>Hålltider: Yngre Gruppen</h2>
+                    <div class="grupp">
+                        <h3>18:00</h3><p>Insläpp och häng<br>Kiosken öppnar</p>
+                        <h3>18:30</h3><p>Danshögstadiet uppträder i danssalen<br>Disco och lekar i danssalen</p>
+                        <h3>19:00</h3><p>Karaoke på stora scenen</p>
+                        <h3>19:30</h3><p>Lotteridragning <br>Fullt Ös på stora scenen <br>The Kingz på stora scenen</p>
+                        <h3>20:00</h3><p>STÄNGNING - Slut för i år</p>
+                    </div>
+                </div>
+                <br>
+                <img src="../assets/images/Aldre.png" alt="Affisch Äldre Gruppen">
+                <div class="data">
+                    <h2>Äldre Gruppen | Åk.5 - Gymnasiet</h2>
+                        <b>Datum:</b> Fredag 15 November 2024 <br>
+                        <b>Tid:</b> 20:30 - 22:30;   <i>Insläpp från 20:15</i><br>
+                        <b>Plats:</b> Aktivitetshuset Pangea, Tallgränd 1
+                </div>
+                <div class="time">
+                    <h2>Hålltider: Äldre Gruppen</h2>
+                    <div class="grupp">
+                        <h3>20:30</h3><p>Insläpp och häng<br>Kiosken öppnar</p>
+                        <h3>21:00</h3><p>Danshögstadiet uppträder i danssalen</p>
+                        <h3>21:30</h3><p>Fullt Ös på stora scenen <br>The Kingz på stora scenen<br>Öppen scen <i>OBS. Anmälan krävs</i></p>
+                        <h3>22:00</h3><p>Lotteridragning</p>
+                        <h3>22:30</h3><p>STÄNGNING - Slut för i år</p>
+                    </div>
+                </div>
+                <div class="info" id="oppen-scen2">
+                    <h2>Öppen Scen: Åk. 5 - Gymnasiet</h2>
+                    <p>Har du en låt du vill spela eller sjunga? Kanske gör du ett solonummer? Kanske är ni ett band, en dansgrupp eller en grupp sångare? Alla anmälningar är välkomna!</p><br>
+                    <p>Det kommer att finnas 10 platser att tillgängliga för anmälan, och om tid finns över så kommer även fler att få delta på plats.</p><br>
+                    <a href="https://forms.gle/PfqnWAPhyZRpj3m97" target="_blank" class="link">Anmäl dig här!</a>
+                </div>
+            </div>
+            <div class="data">
+                <h2>Biljettinformation</h2>
+                <p>Precis som tidigare kommer alla elever att få två biljetter var, dessa delas ut av kulturskolans lärare under lektionerna v.45-46.</p><br>
+                <p>Inträdesavgiften till vår medlemskväll kommer att vara 20kr och betalas vid insläpp via swish eller kontant. Är du däremot medlem hos oss så är inträde helt gratis.</p><br>
+                <p>Skulle det vara så att du har tappat bort dina biljetter när det väl är dags så är det ingen fara! Vid insläppet kommer det att stå personal från kulturskolan som kan intyga att du är elev.</p>
+            </div>
+        </div>
+
+
+        <footer class="footer"> <!-- Hemsidans fot, innehåller länkar och kort information om upphovsman -->
+            <h3>Timrå Kulturskolas Elev- & Föräldraförening</h3>
+            <a href="https://www.instagram.com/tikueff/" target="_blank" class="social"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z"/></svg></a>
+            <a href="https://www.facebook.com/people/Timr%C3%A5-Kulturskolas-Elev-F%C3%B6r%C3%A4ldraf%C3%B6rening/100086434621321/" target="_blank" class="social"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24"><path fill="white" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg></a>
+            <a href="mailto:tiku.eff@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="white" d="m4 8l8 5l8-5l-8-5l-8 5m18 0v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8c0-.73.39-1.36.97-1.71L12 .64l9.03 5.65c.58.35.97.98.97 1.71Z"/></svg></a>
+            <div class="bottom">
+                <p>© 2023, Alvin Nyström</p>
+            </div>
+        </footer>
+        <script src="../../index.js"></script> <!-- Möjliggör läsning av javascript-funktionerna -->
+    </body>
+</html>
