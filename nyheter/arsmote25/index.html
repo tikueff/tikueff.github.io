@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Årsmöte 2025 - TIKUEFF</title>
+        <link rel="icon" type="image/x-icon" href="../../assets/images/icon.png">
+        <link rel="stylesheet" href="../../assets/css/style.css">
+        <link rel="stylesheet" href="../../assets/css/arsmote.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="nav-wrapper">
+                <nav> <!--Desktop Navigationsmeny-->
+                    <a href="../../"><img src="../../assets/images/icon.png" alt="TIKUEFF Logo" class="logo"></a>
+                    <ul class="menu">
+                        <li><a href="../../" class="link">Hem</a></li>
+                        <li><a href="../../nyheter/" class="link-selected">Nyheter</a></li>
+                        <li class="long-link">
+                            <a href="#">Medlemskap</a>
+                            <ul class="dropdown">
+                                <li><a href="../../medlemskap/">Information</a></li>
+                                <li><a href="https://ebas.rum.se/blimedlem/tikueff" target="_blank">Bli medlem</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://drive.google.com/drive/folders/1pgP46aje1kgQg8e5Xvf8RtLjEOskCLEF" class="link" target="_blank">Protokoll</a></li>
+                        <li><a href="../../forslagsladan/" class="link">Förslagslådan</a></li>
+                        <li><a href="../../om-oss/" class="link">Om oss</a></li>
+                    </ul>
+                    <div class="menu"> <!-- Sociala Medier - länkar -->
+                        <a href="https://www.instagram.com/tikueff/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="black" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z"/></svg></a>
+                        <a href="https://www.facebook.com/people/Timr%C3%A5-Kulturskolas-Elev-F%C3%B6r%C3%A4ldraf%C3%B6rening/100086434621321/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 24 24"><path fill="black" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg></a>
+                        <a href="mailto:tiku.eff@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="black" d="M10.89 2.538a2 2 0 0 1 2.072-.09l.147.09l8 5.333a2 2 0 0 1 .884 1.498l.007.166V19a2 2 0 0 1-1.85 1.995L20 21H4a2 2 0 0 1-1.995-1.85L2 19V9.535a2 2 0 0 1 .756-1.566l.135-.098l8-5.333ZM12 4.202L4.803 9L12 13.798L19.197 9L12 4.202Z"/></g></svg></a>
+                    </div> 
+                </nav>
+                <div class="mobile-wrapper"> <!-- Mobil Navigationsmeny -->
+                    <a href="../../"><img src="../../assets/images/icon.png" alt="TIKUEFF Logo"></a>
+                    <div class="hamburger-icon" onclick="toggleMobileMenu(this)">
+                        <div class="bar1"></div> <!-- Navigations icon -->
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                        <ul class="mobile-menu"> <!-- Navigationslänkar -->
+                            <li><a href="../../">Hem</a></li>
+                            <!--<li><a href="../../nyheter.html">Nyheter</a></li>-->
+                            <li><a href="../../medlemskap/">Medlemskap</a></li>
+                            <li><a href="../..https://drive.google.com/drive/folders/1pgP46aje1kgQg8e5Xvf8RtLjEOskCLEF?usp=sharing" class="link" target="_blank">Protokoll</a></li>
+                            <li><a href="../../forslagsladan/">Förslagslådan</a></li>
+                            <li><a href="../../om-oss/">Om oss</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="parent">
+                <div class="info">
+                    <h2>Årsmöte 2025</h2>
+                    <p>Varmt välkomna på TIKUEFF:s Årsmöte! Tisdag den 6 Maj, kl.18:30 på Arenaskolan.</p>
+                    <h3>Vad är Årsmötet?</h3>
+                    <p>Till årsmötet är alla medlemmar välkomna! Du kan komma bara för att lyssna och se hur det går till, eller vara med och säga vad du tycker. På mötet bestämmer vi bland annat vilka som ska sitta i styrelsen – alltså de som hjälper till att bestämma viktiga saker under året.<br>Styrelsen jobbar för alla medlemmar och ser till att idéer och beslut blir verklighet. Vi kollar också hur det har gått för den styrelse som jobbade förra året – gjorde de ett bra jobb?<br>Så kom och häng med oss på årsmötet – din röst är viktig!</p>
+                </div>
+                <div class="info">
+                    <h2>Vanliga frågor</h2>
+                    <h3>Innebär mitt deltagande något ansvar?</h3>
+                    <p>Nej det behöver man inte! Många av dem som går på årsmöten kommer dit för att hålla sig uppdaterade på hur föreningen styrs och vad som planeras inför nästa år. Att gå på årsmötet är helt kravlöst!</p>
+                    <h3>Hur lång tid tar årsmötet?</h3>
+                    <p>Vårat årsmöte tar vanligtvis ungefär en timme och brukar ofta upplevas som väldigt lärorikt och informativt!</p>
+                    <h3>Jag är ny – vågar jag gå ändå?</h3>
+                    <p>Absolut! Årsmötet är öppet för alla medlemmar och ett utmärkt sätt att lära känna föreningen bättre. Det är helt okej att bara lyssna.</p>
+                    <h3>Får jag säga något på mötet?</h3>
+                    <p>Ja, alla medlemmar har så kallad yttranderätt. Du kan ställa frågor, begära ordet, och delta i diskussioner – även om du inte röstar.</p>
+                    <h3>Kostar det något att gå på årsmötet?</h3>
+                    <p>Nej, det är gratis att delta. Vi bjuder dessutom på fika under mötet!</p>
+                    <h3>Vad händer om jag inte förstår något under mötet?</h3>
+                    <p>Du får gärna ställa frågor! Årsmötet ska vara öppet och begripligt. Ordförande eller andra deltagare hjälper gärna till att förklara.</p>
+                    <h3>Vad är en motion och hur lämnar jag in en?</h3>
+                    <p>En motion är ett förslag från en medlem. Alla motioner ska mailas in till oss via, tiku.eff@gmail.com, senast Tisdag den 22 April.</p>
+                </div>
+            </div>
+            <div class="parent">
+                <div class="data">
+                    <h2>Om Årsmötet</h2>
+                    <p>
+                        <b>Datum:</b> Tisdag 6 Maj 2025 <br>
+                        <b>Tid:</b> 18:30 <br>
+                        <b>Plats:</b> Arenaskolans Matsal, Sportvägen 3
+                    </p><br>
+                    <p>
+                        <b>Kallelse skickad:</b> Tisdag 8 April 2025 <br>
+                        <b>Kallelse via:</b> E-mail, Hemsida, Facebook & Instagram <br>
+                        <b>Inlämning av motioner:</b> <a href="mailto:tiku.eff@gmail.com">tiku.eff@gmail.com</a><br>
+                        <b>Sista datum för motioner:</b> 22 April 2025
+                    </p>
+                </div>
+                <img src="../../assets/images/arsmote25.pdf" alt="Årsmöte 2025">
+            </div>
+        </div>
+
+        <footer class="footer"> <!-- Hemsidans fot, innehåller länkar och kort information om upphovsman -->
+            <h3>Timrå Kulturskolas Elev- & Föräldraförening</h3>
+            <a href="https://www.instagram.com/tikueff/" target="_blank" class="social"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z"/></svg></a>
+            <a href="https://www.facebook.com/people/Timr%C3%A5-Kulturskolas-Elev-F%C3%B6r%C3%A4ldraf%C3%B6rening/100086434621321/" target="_blank" class="social"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24"><path fill="white" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg></a>
+            <a href="mailto:tiku.eff@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="white" d="m4 8l8 5l8-5l-8-5l-8 5m18 0v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8c0-.73.39-1.36.97-1.71L12 .64l9.03 5.65c.58.35.97.98.97 1.71Z"/></svg></a>
+            <div class="bottom">
+                <p>© 2023, Alvin Nyström</p>
+            </div>
+        </footer>
+        <script src="../../index.js"></script> <!-- Möjliggör läsning av javascript-funktionerna -->
+    </body>
+</html>
