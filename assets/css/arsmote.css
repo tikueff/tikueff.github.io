@@ -1,6 +1,24 @@
 html {
     scroll-behavior: smooth;
   }
+.button2 {
+    max-width: 375px;
+    height: 85px;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 17px;
+    background-color: #dfbd8bca;
+    opacity: 70%;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+.button2:hover {
+    opacity: 100%;
+    transition: .4s ease;
+}
+
 
 .container { /*definerar bredd, gap, marginaler och flex-egenskaper*/
     display: flex;
