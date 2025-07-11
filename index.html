@@ -90,7 +90,7 @@
                 <h2>Evenemangskalender</h2>
                 <div class="events"> <!-- Flex container - Alla div:ar inanför denna går att justera med flex-->
                     <!--NYAST LÄNGST NER!!-->
-                    <div class="box">
+                    <!-- <div class="box">
                         <h3>Kulturskolans Invigning</h3>
                         <b>Datum:</b> 30 Augusti <br>
                         <b>Tid:</b> Kommer snart <br>
@@ -103,8 +103,9 @@
                         <b>Tid:</b> - <br>
                         <b>Plats:</b> Timrå Kommun <br><br>
                         <a href="" target="_blank" class="block">Kommer snart</a>
-                    </div>
+                    </div> -->
                 </div>
+                <div data-tockify-component="calendar" data-tockify-calendar="tikueff"></div>
             </div>
         </div>
         
@@ -118,5 +119,6 @@
             </div>
         </footer>
         <script src="index.js"></script> <!-- Möjliggör läsning av javascript-funktionerna -->
+        <script data-cfasync="false" data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script> <!-- Kalender-skript -->
     </body>
 </html>
