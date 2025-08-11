@@ -9,6 +9,10 @@
     gap: 50px; 
     margin: 2rem auto;
 }
+.container h1 {
+    line-height: 1.2;
+    padding-bottom: 1rem;
+}
 .container .info { /*Informationsruta - bakgrundsfärg, textfärg, padding, rundade hörn & bredd*/
     background-color: #F54D2A;
     color: white;
