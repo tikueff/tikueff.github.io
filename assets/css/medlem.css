@@ -1,48 +1,100 @@
 /* MEDLEMSSIDA */
 .container { /*Flex container, bestämmer margin och gaps*/
-    width: clamp(300px 80% 1300px);
+    /* width: clamp(300px, 80%, 1300px); */
+    max-width: 1300px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     gap: 50px; 
-    margin: 2rem;
+    margin: 2rem auto;
 }
 .container .info { /*Informationsruta - bakgrundsfärg, textfärg, padding, rundade hörn & bredd*/
     background-color: #F54D2A;
     color: white;
     padding: 1rem;
     border-radius: 15px;
-    width: 1150px;
+    max-width: 560px;
+}
+.container .info p {
+    padding-bottom: 1rem;
 }
 /*Länk-knapp*/
-.container .info .link a {
+.container .info a {
     background: white;
     color: black;
     padding: 1rem;
     padding-top: 5px;
     padding-bottom: 5px;
-    margin-top: 1rem;
     border-radius: 5px;
     transition: .4s ease;
 }
-.container .info .link a:hover {
+.container .info a:hover {
     text-decoration: underline;
 }
-/*Ansökningsruta (Ej synlig på mobil)*/
-.container .ansokan { /*Ansökningsruta - bakgrundsfärg, padding, rundade hörn, bredd, minimum-höjd*/
-    background-color: #D5D7D4;
+
+.container .reason {
+    background-color: #d5d7d4;
+    color: #1a1a1a;
     padding: 1rem;
     border-radius: 15px;
-    width: 525px;
-    min-height: 500px;
+    max-width: 560px;
+}
+.container .reason ul {
+    padding-left: 2rem;
 }
 
-/*@media only screen and (max-width: 600px) {
-    .container .info .link a {
-        display: inline;
-    }
-    .container .ansokan {
-        display: none;
-    }
-}*/
+.container .frivillig {
+    background-color: #a9c5a0;
+    color: #1a1a1a;
+    padding: 1rem;
+    border-radius: 15px;
+    max-width: 560px;
+}
+.container .frivillig span p {
+    padding-top: 10px;
+    font-style: italic;
+}
+
+.container .guide {
+    background-color: #F54D2A;
+    color: white;
+    padding: 1rem;
+    border-radius: 15px;
+    max-width: 560px;
+}
+.container .guide ol {
+    padding-left: 2rem;
+}
+.container .guide p {
+    font-style: italic;
+    padding-top: 1rem;
+}
+
+.container .privacy {
+    max-width: 820px;
+    flex: 1 1 820px;
+    background-color: #d5d7d4;
+    padding: 1rem;
+    border-radius: 15px;
+}
+.container .privacy ul {
+    padding-left: 2rem;
+}
+
+.container .ram {
+    width: 300px;
+    height: 300px;
+    background-color: #a9c5a0;
+    padding: 1rem;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .ram img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}

@@ -2,6 +2,7 @@
 .about-wrapper {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .about-wrapper .about {
     background-color: #F54D2A;
@@ -9,12 +10,35 @@
     padding: 1rem;
     margin: 2rem;
     color:white;
-    width: 1150px;
+    max-width: 560px;
     gap: 2rem;
 }
 .about-wrapper .about a {
     text-decoration: underline;
     color: white;
+}
+
+.about-wrapper .behind {
+    background-color: #D5D7D4;
+    border-radius: 15px;
+    padding: 1rem;
+    margin: 2rem;
+    color: #1a1a1a;
+    max-width: 560px;
+    gap: 2rem;
+}
+.about-wrapper .behind ul {
+    padding-left: 2rem;
+}
+
+.about-wrapper .believe {
+    background-color: #a9c5a0;
+    border-radius: 15px;
+    padding: 1rem;
+    margin: 2rem;
+    color: #1a1a1a;
+    max-width: 1150px;
+    gap: 2rem;
 }
 
 /* STYRELSEGALLERIET */
@@ -30,6 +54,7 @@
 }
 .styrelsen-content {
     /* width: clamp(300px, 80%, 1350px); */
+    max-width: 1150px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -69,7 +94,7 @@
 
 @media only screen and (max-width: 600px) {
     .lada {
-        height: 40%;
-        width: 40%;
+        height: 50%;
+        width: 50%;
     }
 }
