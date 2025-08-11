@@ -76,8 +76,8 @@
     padding: 15px;
     background-color: #D5D7D4;
     border-radius: 15px;
-    width: 200px;
-    height: 350px;
+    max-width: 200px;
+    min-height: 350px;
 }
 .lada:hover {
     transform: scale(1.05);
@@ -93,8 +93,8 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .lada {
+    /* .lada {
         height: 50%;
         width: 50%;
-    }
+    } */
 }
